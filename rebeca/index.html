@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Dados do contribuinte</h1>
+    <form id="form dados" action="add_dados.php" method="POST">
+Nome: <input type="text" name="nome_cont" size="50" required><br>
+CPF: <input type="text" name="cpf" placeholder="apenas números" required><br>
+RG: <input type="text" name="rg" placeholder="apenas números" required><br>
+PROFISSÃO: <input type="text" name="profissão" required><br>
+TITULO ELEITOR: <input type="text" name="titulo eleitor" required><br>
+Órgão Emissor: <input type="text" name="orgão" required><br>
+Estado Civil:
+<input type="radio" name="est_civ" value="1">
+Solteiro
+<input type="radio" name="est_civ" value="2">
+Casado
+<input type="radio" name="est-civ" value="3">
+Viúvo(a)<br>
+Data Nascimento: <input type="date" name="dt_nascimento" required>
+SEXO:
+<input type="radio" name="sexo" value="M">
+Masculino <br>
+<input type="radio" name="sexo" value="F">
+Feminino <br>
+RUA: <input type="text" name="rua_cont" size="50" required><br>
+N:  <input type="text" name="num_cont"  required><br>
+BAIRRO: <input type="text" name="num_bairro"  required><br>
+CIDADE: <input type="text" name="num_cidade"  required><br>
+UF:
+<select name="uf_conf" >
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espirito Santo</option>
+    <option value="GO">Goias</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Para</option>
+    <option value="PB">Paraiba</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="PR">Paraná</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="Se">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+CEP: <input type="number" name="cep_cont"required><br>
+TELEFONE FIXO: <input type="number" name="tel" required><br>
+CELULAR /WHATSAPP: <input type="number" name="cel_cont" required><br>
+E-mail: <input type="email" name="email.cont" size="50"> <br>
+Escolaridade:
+<select name="escolaridade">
+    <option value="1">Sem escolaridade</option>
+    <option value="2">Fundamental 1 (1 a 5 série)</option>
+    <option value="3">Fundamental 2 (6 a 9 série)</option>
+    <option value="4">Médio (antigo ° grau)</option>
+    <option value="5">Superior incompleto</option>
+    <option value="6">Superior completo</option>
+    <option value="7">Ignorado</option>
+    </select> <br>
+    Rendimento familiar mensal: <input type="number" name="rend_fam" step="0.01" min="0.00"><br>
+    Número de membros da família: <input type="number" name="membros">
+    <h1>Dados Gerais da Empresa</h1>
+    Nome fantasia: <input type="text" name="fantasia" size="50"> <br>
+    Razão Social: <input type="text" name="razao" size="50">
+    CNPJ: <input type="text" name="cnpj"><br>
+    Código de acesso: <input type="text" name="cod"><br>
+    N° do recibo do IR (se for necessário): <input type="text" name="num_ir"><br>
+    Rua: <input type="text" name="rua_emp" size="50" required>
+N° <input type="text" name="num_emp" required> <br>
+Bairro <input type="text" name="bairro_emp" required>
+Cidade <input type="text" name="cidade_emp" required> <br>
+UF:
+<select name="uf_emp">
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santos</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT"> Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB" selected>Paraíba</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PR">Paraná</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraíma</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+CEP: <input type="number" name="cep_emp" required><br>
+Telefone: <input type="number_emp" name="cel_cont" required>
+E-mail: <input type="email" name="email.cont" size="50"> <br>
+Gera faturamento:
+<input type="radio" name="faturamento" value="1"> Sim
+<input type="radio" name="faturamento" value="2"> Não <br>
+Quanto? (Valor médio mensal):
+<input type="number" name="fat_mensal" step="0.01" min="0.00"><br>
+Segmento de negócio:
+<select name="segmento">
+    <option value="1">Comércio</option>
+    <option value="2">Serviço</option>
+    <option value="3">Indústria</option>
+    </select><br>
+    Data da Abertura: <input type="date" name="dt_abertura"><br>
+    Tem funcionário:
+    <input type="radio" name="funcionario" value="1"> Sim
+    <input type="radio" name="funcionario" value="0"> Não <br>
+    Demanda da Empresa: <br>
+    <textarea name="demanda" rows="4" cols="50"></textarea><br>
+    <input type="submit" name="cadastrar" value="Cadastrar">
+</form>
+</body>
+</html>
